@@ -130,6 +130,16 @@ To send data to a device, use JSON with a `payload_raw` field with a base64 enco
 }
 ```
 
+#### Downlink JSON Message Example
+
+```text
+{
+    "payload_raw": "SGVsbG8sIHdvcmxkIQ==",
+    "port": 1,
+    "confirmed": false
+}
+```
+
 When receiving data from a device, the messages will be in JSON and look like the following. The
 data from the device is in the `payload` field, and is a base64 encoded string.
 
